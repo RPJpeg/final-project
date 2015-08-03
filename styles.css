@@ -37,7 +37,7 @@ a:hover {
 
 header {
   background-color: #17406C;
-  height: 140px;
+  height: 130px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -52,14 +52,18 @@ header {
 }
 
 .header-logo {
-  height: 90%;
-  width: auto;
+  height: auto;
+  width: 12%;
   padding-top: 16px;
 }
 
 .navigation {
   font-size: 0;
   padding-top: 36px;
+}
+
+span {
+  color: #BEBEBA;
 }
 
 header li {
@@ -266,6 +270,7 @@ iframe:hover {
 h1 {
   font-size: 48px;
   font-weight: 700;
+  color: white;
 }
 
 h2 {
