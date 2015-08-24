@@ -4,59 +4,136 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="This is a boilerplate for building future websites." />
+    <meta name="description" content="Preston Wealth Advisors" />
     <title>Preston Wealth Advisors</title>
     <link rel="stylesheet" href="reset.css" type="text/css" />
-    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
 
-    <header>
+    <header class="header-contact">
       <div class="wrapper">
-        <a href="index.html"><img class="header-logo" alt="Preston Wealth Advisors" src="images/logo_white.png"></a>
-        <ul class="navigation align-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="institutions.html">Institutions</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html"><span>Contact</span></a></li>
-        </ul>
+        <div class="align-left">
+          <a href="index.html"><img class="header-logo" alt="Preston Wealth Advisors" src="images/logo.png"></a>
+        </div>
+        <nav>
+          <ul class="align-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="institutions.html">Institutions</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html"><span>Contact</span></a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
       </div>
+      <div class="wrapper"><img src="images/phone.png" class="align-right phone-img"></div>
     </header>
 
-    <main>
-      <h1>Contact</h1>
-    </main>
-    <section class="wrapper">
-
-    </section>
-    <footer>
-      <div class="wrapper">
-        <div class="leftfooter align-left clearfix:after">
-          <img src="images/logo_white.png" class="footer-logo">
-          <p>1886 Metro Center Dr. Suite 620 Reston, VA 20190<br>
-          Phone (703) 757-0419  -  Fax (703) 757-0430<br>
-          For more information please email us at: <a href="mailto:tjdoremus@prestonwealthadvisors.com">tjdoremus@prestonwealthadvisors.com</a> or <a href="mailto:gmattingly@prestonwealthadvisors.com">gmattingly@prestonwealthadvisors.com</a></p>
+    <main class="main-contact">
+      <div class="wrapper main-round-corners">
+        <div class="align-left main-column">
+          <img src="images/get_in_touch.png" class="get-contact-img">
         </div>
-      <div class="centerfooter align-left clearfix:after">
-        <h3>Find us here!</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.822002430413!2d-77.34076030000001!3d38.9508946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6482e2c339799%3A0xcf727a5bdcbdbc6c!2s1886+Metro+Center+Dr+%23620%2C+Reston%2C+VA+20190!5e0!3m2!1sen!2sus!4v1438570536650" width="400" height="300" allowfullscreen></iframe>
+        <div class="clear"></div>
+        <div class="align-center contact-buttons">
+          <a class="button light-button" id="show-adv-form" href="#">Request ADV and Privacy Policy</a>
+          <a class="button sub-button light-sub-button" id="show-webinar-form" href="#">Webinar Request</a>
+        </div>
       </div>
-      <div class="rightfooter align-right">
-        <h3>Disclaimer</h3>
-        <p>It should not be assumed that recommendations made in the future will be profitable or will equal the performance of the securities in this list. All performance calculations prior to 2013 have been done by the research department and have not been audited or verified by PWA or any outside 3rd party. The performance was calculated using live models and actual trades but not through PWA's platform. Past performance may not be indicative of future results and the performance of a specific individual client account may vary substantially from the composite performance results. Therefore, no current or prospective client should assume that future performance will be profitable, or equal either the Preston Wealth Advisors’ composite performance results reflected above, or the performance results for any of the comparative index benchmarks provided.</p>
+    </main>
 
-        <p id="show-this-on-click" class="hide">Preston Wealth Advisors (“PWA”) is an SEC registered investment adviser located in Reston, VA. PWA is registered in the state of Virginia and in compliance with the current registration requirements of the states in which PWA maintains clients. PWA may only transact business in those states in which it is registered, or qualifies for an exemption or exclusion from registration requirements.<br>
+    <section class="section-contact">
+      <div class="wrapper">
+        <div class="section-column-contact align-left">
+          <div class="adv-request" id="adv-form">
+          <h2 class="form-heading">Request for ADV and Privacy Policy</h2>
+          <p class="section-p-contact">Call (703) 757-0419 or use the form below to learn more about how we can help you.</p>
 
-        PWA’s web site is limited to the dissemination of general information pertaining to its advisory services, together with access to additional investment-related information, publications, and links. Accordingly, the publication of PWA’s web site on the Internet should not be construed by any consumer and/or prospective client as PWA’s solicitation to effect, or attempt to effect transactions in securities, or the rendering of personalized investment advice for compensation, over the Internet. Any subsequent, direct communication by PWA with a prospective client shall be conducted by a representative that is either registered or qualifies for an exemption or exclusion from registration in the state where the prospective client resides.</p>
-        <p class="readmore align-right"><a href="#">Read more &gt;</a></p>
-				<p class="readless align-right hide"><a href="#">Read less &gt;</a></p>
+          <form>
+            <div class="adv-form">
+              <fieldset>
+                <div class="form-row">
+                  <div class="name-container">
+                    <input type="text" name="name[first]" placeholder="First Name (Required)" id="name" class="name-field">
+                    <input type="text" name="name[last]" placeholder="Last Name (Required)" class="name-field">
+                  </div>
+                </div>
 
+                <div class="form-row">
+                  <div class="email-container">
+                    <input type="text" name="email" placeholder="example@example.com" id="email" class="email-field">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="phone-number-container">
+                    <label for="phone">Phone:</label>
+                    <input type="text" name="phone[area_code]" class="phone-field" maxlength="3" id="phone"> &mdash;
+                    <input type="text" name="phone[prefix]" class="phone-field" maxlength="3"> &mdash;
+                    <input type="text" name="phone[line_number]" class="phone-field" maxlength="4">
+                  </div>
+                </div>
+
+              </fieldset>
+
+              <fieldset>
+                <label for="checkbox-adv">ADV Part 2A</label>
+                  <div class="adv-checks">
+                    <input type="checkbox" name="checkbox-adv" value="ADV Part 2A" id="check">
+                  </div>
+                <label for="checkbox-policy">Privacy Policy</label>
+                  <div class="adv-checks">
+                    <input type="checkbox" name="checkbox-policy" value="Privacy Policy">
+                  </div>
+              </fieldset>
+
+              <fieldset>
+                <input type="submit" value="Submit" class="submit">
+              </fieldset>
+            </div>
+          </form>
+        </div>
       </div>
-        <p>©2015 Preston Wealth Advisors</p>
+        <div class="section-mini-column align-right">
+          <p class="section-p-contact"><em>Please drop us a line!</em> Preston Wealth Advisors are happy to help whenever you have questions or need additional information.  Please use the input fields provided to <em>Request ADV and the Privacy Policy</em> or to schedule a <em>Webinar</em> with us!  If you simply have questions, feel free to reach out to us using the contact information listed below.
+        </div>
+        <div class="clear"></div>
+      </div>
+    </section>
+
+    <footer class="footer-contact">
+      <div class="wrapper">
+        <div class="footer-column-home align-left">
+          <img src="images/logo_white.png" class="footer-logo" />
+          <p class="footer-p">1886 Metro Center Dr.<br>
+          Suite 620<br>
+          Reston, VA 20190<br>
+          Phone (703) 757-0419<br>
+          Fax (703) 757-0430<br>
+          For more information please email us at: <br>
+          <a href="mailto:tjdoremus@prestonwealthadvisors.com">tjdoremus@prestonwealthadvisors.com</a> or <br>
+          <a href="mailto:gmattingly@prestonwealthadvisors.com">gmattingly@prestonwealthadvisors.com</a></p>
+        </div>
+        <div class="footer-column-home align-left">
+          <h3>Find us here!</h3>
+          <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.822002430413!2d-77.34076030000001!3d38.9508946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6482e2c339799%3A0xcf727a5bdcbdbc6c!2s1886+Metro+Center+Dr+%23620%2C+Reston%2C+VA+20190!5e0!3m2!1sen!2sus!4v1438570536650" width="400" height="250" allowfullscreen></iframe></div>
+        </div>
+        <div class="footer-column-home align-right">
+          <h3>Disclaimer</h3>
+          <div class="disc-container"><p class="footer-p disclaimer">It should not be assumed that recommendations made in the future will be profitable or will equal the performance of the securities in this list. All performance calculations prior to 2013 have been done by the research department and have not been audited or verified by PWA or any outside 3rd party. The performance was calculated using live models and actual trades but not through PWA's platform. Past performance may not be indicative of future results and the performance of a specific individual client account may vary substantially from the composite performance results. Therefore, no current or prospective client should assume that future performance will be profitable, or equal either the Preston Wealth Advisors’ composite performance results reflected above, or the performance results for any of the comparative index benchmarks provided.</p>
+            <p id="show-this-on-click" class="hide footer-p disclaimer">Preston Wealth Advisors (“PWA”) is an SEC registered investment adviser located in Reston, VA. PWA is registered in the state of Virginia and in compliance with the current registration requirements of the states in which PWA maintains clients. PWA may only transact business in those states in which it is registered, or qualifies for an exemption or exclusion from registration requirements.<br><br>
+            PWA’s web site is limited to the dissemination of general information pertaining to its advisory services, together with access to additional investment-related information, publications, and links. Accordingly, the publication of PWA’s web site on the Internet should not be construed by any consumer and/or prospective client as PWA’s solicitation to effect, or attempt to effect transactions in securities, or the rendering of personalized investment advice for compensation, over the Internet. Any subsequent, direct communication by PWA with a prospective client shall be conducted by a representative that is either registered or qualifies for an exemption or exclusion from registration in the state where the prospective client resides.</p>
+            <p class="align-right footer-p readmore"><a href="#">Read more &gt;</a></p>
+    				<p class="align-right hide footer-p readless"><a href="#">Read less &gt;</a></p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <p class="footer-p disclaimer">©2015 Preston Wealth Advisors</p>
       </div>
     </footer>
 
