@@ -36,4 +36,35 @@ $(document).ready(function() {
 
   $(".lessinfo").click(hideinfo);
 
+// --------------------------------------------
+
+
+  // function displayWebinar() {
+  //   $("#webinar-form").velocity({
+  //     opacity:[1,0]
+  //   });
+  // }
+
+  $("#show-webinar-form").click(function() {
+    $(".webinar-form").velocity("transition.fadeIn");
+
+
+  });
+
+  // $("#show-webinar-form").click(function() {
+  //   $("nav a").velocity("transition.fadeIn");
+  //
+  //   $("nav").velocity({
+  //     translateY: ["0%", "-100%"],
+  //   }, {
+  //     easing: [400, 50],
+  //     duration: 500
+  //   });
+  //   $(".overlay").velocity({
+  //     opacity: [1, 0]
+  //   }, {
+  //     display: 'block'
+  //   });
+  // });
+
 });
