@@ -46,7 +46,7 @@ $(document).ready(function() {
   // }
 
   $("#show-webinar-form").click(function() {
-    $(".webinar-form").velocity("transition.fadeIn");
+    $(".adv-form").velocity({ opacity: 1 }, { display: "block" });;
 
 
   });
