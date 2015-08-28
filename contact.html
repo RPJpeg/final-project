@@ -25,7 +25,6 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="institutions.html">Institutions</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html"><span>Contact</span></a></li>
           </ul>
         </nav>
@@ -50,12 +49,13 @@
     <section class="section-contact">
       <div class="wrapper">
         <div class="section-column-contact align-left">
+
           <div class="adv-request">
           <h2 class="form-heading">Request for ADV and Privacy Policy</h2>
           <p class="section-p-contact">Call (703) 757-0419 or use the form below to learn more about how we can help you.</p>
 
           <form>
-            <div class="adv-form">
+            <div class="form-area">
               <fieldset>
                 <div class="form-row">
                   <div class="name-container">
@@ -93,7 +93,7 @@
               </fieldset>
 
               <fieldset>
-                <input type="submit" value="Submit" class="submit">
+                <input type="submit" value="Submit" class="submit" id="submit">
               </fieldset>
             </div>
           </form>
@@ -104,7 +104,7 @@
         <p class="section-p-contact">Please complete the following form, so that we can schedule a webinar that works best for you.</p>
 
         <form>
-          <div class="gathered-forms">
+          <div class="form-area">
             <fieldset>
               <div class="form-row">
                 <div class="name-container">
@@ -151,10 +151,21 @@
                   <input type="checkbox" name="checkbox-all-options" value="Please Send Me a List of All Options">
                   <label for="checkbox-all-options">Please Send Me a List of All Options</label>
                 </div>
+
+                <div class="form-row">
+                  <p class="extra-form-text">Best Available Time:</p>
+                  <div class="best-time-container">
+                    <label for="phone">Date:</label>
+                    <input type="date" name="date" class="date-field" id="date">
+                    <label for="time">Time:</label>
+                    <input type="time" name="time" class="time-field">
+                  </div>
+                </div>
+
             </fieldset>
 
             <fieldset>
-              <input type="submit" value="Submit" class="submit">
+              <input type="submit" value="Submit" class="submit" id="submitWebinar">
             </fieldset>
           </div>
         </form>
@@ -162,10 +173,13 @@
 
       </div>
         <div class="section-mini-column align-right">
-          <p class="section-p-contact"><em>Please drop us a line!</em> Preston Wealth Advisors are happy to help whenever you have questions or need additional information.  Please use the input fields provided to <em>Request ADV and the Privacy Policy</em> or to schedule a <em>Webinar</em> with us!  If you simply have questions, feel free to reach out to us using the contact information listed below.
+          <p class="section-p-contact"><em>Please drop us a line!</em> Preston Wealth Advisors are happy to help whenever you have questions or need additional information.  Please use the input fields provided to <em>Request ADV and the Privacy Policy</em> or to schedule a <em>Webinar</em> with us!  If you simply wish to reach out to us via email, please click here!
+            <div class="align-center contact-buttons">
+              <a class="button" href="mailto:gmattingly@prestonwealthadvisors.com">Email Us!</a>
+            </div>
         </div>
+
         <div class="clear"></div>
-      </div>
     </section>
 
     <footer class="footer-contact">

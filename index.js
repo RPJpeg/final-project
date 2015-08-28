@@ -38,33 +38,28 @@ $(document).ready(function() {
 
 // --------------------------------------------
 
+  function showWebForm() {
+    $(".webinar-form").fadeIn();
+    event.preventDefault();
+    $(".adv-request").hide();
+  }
 
-  // function displayWebinar() {
-  //   $("#webinar-form").velocity({
-  //     opacity:[1,0]
-  //   });
-  // }
+  $("#show-webinar-form").click(showWebForm);
 
-  $("#show-webinar-form").click(function() {
-    $(".adv-form").velocity({ opacity: 1 }, { display: "block" });;
+  function showAdvForm() {
+    $(".adv-request").fadeIn();
+    event.preventDefault();
+    $(".webinar-form").hide();
+  }
 
+  $("#show-adv-form").click(showAdvForm);
 
-  });
+  function submitRequest() {
+    event.preventDefault();
+    alert("Your request has been submitted!")
+  }
 
-  // $("#show-webinar-form").click(function() {
-  //   $("nav a").velocity("transition.fadeIn");
-  //
-  //   $("nav").velocity({
-  //     translateY: ["0%", "-100%"],
-  //   }, {
-  //     easing: [400, 50],
-  //     duration: 500
-  //   });
-  //   $(".overlay").velocity({
-  //     opacity: [1, 0]
-  //   }, {
-  //     display: 'block'
-  //   });
-  // });
+  $("#submit").click(submitRequest);
+  $("#submitWebinar").click(submitRequest);
 
 });
