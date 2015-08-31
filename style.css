@@ -158,6 +158,11 @@ nav a {
   font-size: 1.1rem;
 }
 
+nav a:hover {
+  top: 1px;
+  position: relative;
+}
+
 /*---------- main styling ----------*/
 
 main {
@@ -225,13 +230,78 @@ main {
 .main-round-corners {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  background-color: #FF4B37;
+  background-color: #6491B9;
   max-width: 1100px;
 }
 
 .main-h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 20px;
+  font-weight: 500;
+  color: #17406C;
+}
+
+.main-about {
+  background-color: #ececec;
+  background-image: url("images/city.png");
+  background-position:center center;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.grid-circle {
+  width: 33.33%;
+  float: left;
+  transition: all .2s ease-in-out;
+  padding: 25px;
+}
+
+.grid-circle:hover {
+  transform: scale(1.1);
+}
+
+.grid-circle h4 {
+  display: inline-block;
+  color: white;
+  background-color: rgba (0,0,0,0.7);
+  padding: 5px;
+  font-weight: 600;
+}
+
+.grid-circle p {
+  display: inline-block;
+  color: #ececec;
+  background-color: rgba (0,0,0,0.7);
+  padding: 5px;
+}
+
+.grid-circle img {
+  border-radius: 500px;
+  border: 8px solid #FF4B37;
+  width: 25%;
+}
+
+.main-about p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.main-about h4 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.main-about h2 {
+  font-size: 4rem;
+  margin: 40px auto 40px auto;
+  font-weight: 700;
+  padding-bottom: 10px;
+  text-align: center;
+  color: ;
+
 }
 
 /*---------- section styling ----------*/
@@ -252,6 +322,10 @@ section {
 
 .section-home a:hover {
   color: #FF4B37;
+}
+
+.section-home img:hover {
+  transform: scale(1.03);
 }
 
 .section-column-home {
@@ -283,6 +357,20 @@ section h2 {
   margin: 20px;
 }
 
+section h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+section a {
+  color: white;
+}
+
+section a:hover {
+  color: white;
+}
+
 .section-p-home {
   width: 90%;
 }
@@ -290,73 +378,116 @@ section h2 {
 .section-services {
   width: 100%;
   background-color: #222B30;
-  display: block;
-  position: relative;
+  padding: 0 0 100px 0;
 }
 
-.section-services li {
-  max-width: none;
-  overflow: hidden;
+.grid-square {
   position: relative;
-  text-align: center;
-  float: left;
   width: 25%;
-  display: list-item;
-  list-style: none;
+  padding-bottom: 25%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  float: left;
+  background-size: 100%;
+  transition: all .25s ease-in-out
 }
 
-.section-services li a {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  color: white;
+.grid-square:hover {
+  background-size: 105%;
 }
 
-.section-services li a h3 {
-  font-size: 30px;
-  line-height: 12px;
-  color: white;
+.grid-portfolio {
+  background-image: url("images/img-portfolio.png");
+}
+
+.grid-financial {
+  background-image: url("images/img-financial.png");
+}
+
+.grid-college {
+  background-image: url("images/img-college.png");
+}
+
+.grid-retirement {
+  background-image: url("images/img-retirement.png");
+}
+
+.grid-specialneeds {
+  background-image: url("images/img-specialneeds.png");
+}
+
+.grid-insurance {
+  background-image: url("images/img-insurance.png");
+}
+
+.grid-athlete {
+  background-image: url("images/img-athlete.png");
+}
+
+.grid-thirdparty {
+  background-image: url("images/img-thirdparty.png");
+}
+
+.inner-grid-content {
   position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  left: 0px;
+  right: 0px;
   top: 50%;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 2rem;
-}
-
-.service-option {
-  position: relative;
   width: 100%;
-  transition: all .2s ease-in-out;
+}
+
+/*=================== MODALS =======================*/
+
+#overlay {
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+     display: none;
+     background-color: rgba(0,0,0,.75);
+}
+
+.modal-title h1 {
+  color: white;
   text-align: center;
-  list-style: none;
+  font-size: 1.75rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #FF4B37;
+  padding: 20px;
 }
 
-.service-option:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
+.modal-title p {
+  padding: 15px;
+  text-align: left;
 }
 
-.portfolio {
-  background: url("http://placehold.it/200x200") center center no-repeat;
-  background-size: cover;
+.modal-title img {
+  width: 75%;
+  border-radius: 5px;
+}
+
+.modal-title img:hover {
+  opacity: 0.9;
+  transition: all .25s ease-in-out
+}
+
+.modals {
+  z-index: 1001;
+  background-color: white;
+  width: 50%;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10% auto;
+  display: none;
 }
 
 
-.entire-img-grid {
-  display: block;
-  font-size: 100%;
-}
-
-.arrange-grid {
-  display: block;
-  list-style: none;
-  vertical-align: baseline;
-}
+/*=================== END MODALS =======================*/
 
 .section-p-contact {
   color: #BEBEBA;
@@ -401,7 +532,32 @@ section img {
   margin-top: 35px;
 }
 
-.adv-request {
+.section-about {
+  width: 100%;
+  background-color: #BEBEBA;
+  padding: 50px;
+}
+
+.section-about img {
+  float: left;
+}
+
+.section-about h2 {
+  text-align: left;
+  margin: 0 5px 20px 0;
+  color: #222B30;
+}
+
+.section-about h3 {
+  text-align: left;
+  margin: 5px;
+  color: #222B30;
+}
+
+.section-about p {
+  text-align: left;
+  margin: 10px;
+  color: #222B30;
 
 }
 
@@ -524,6 +680,15 @@ footer a:hover {
   text-align: justify;
 }
 
+footer ul {
+  font-size: 0;
+  display: block
+}
+
+footer li {
+  list-style-type: circle;
+}
+
 .disc-container {
   width: 90%;
   margin: 0 auto;
@@ -561,11 +726,18 @@ iframe:hover {
 }
 
 .footer-logo {
-  margin: 20px 0 15px 20px;
+  margin: 30px 10px 10px 10px;
   width: 30%;
   height: auto;
 }
 
+.middle-col {
+  padding-left: 5px;
+  margin-top: 130px;
+  border-style: solid;
+  border-color: #A7A9AC;
+  border-left-width: 1px;
+  }
 
 /*---------- IDs and hides ----------*/
 

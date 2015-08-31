@@ -62,4 +62,78 @@ $(document).ready(function() {
   $("#submit").click(submitRequest);
   $("#submitWebinar").click(submitRequest);
 
+  // --------------------------------------------
+
+  function turnOnPortfolio() {
+    $("#overlay").fadeIn();
+    event.preventDefault();
+    $(".portfolio-modal").show();
+  }
+
+  $("#portfolio-clicked").click(turnOnPortfolio);
+
+  function turnOnFinancial() {
+    $("#overlay").fadeIn();
+    event.preventDefault();
+    $(".financial-modal").show();
+  }
+
+  $("#financial-clicked").click(turnOnFinancial);
+
+  function turnOnCollege() {
+    $("#overlay").fadeIn();
+    event.preventDefault();
+    $(".college-modal").show();
+  }
+
+  $("#college-clicked").click(turnOnCollege);
+
+  function turnOnRetirement() {
+    $("#overlay").fadeIn();
+    event.preventDefault();
+    $(".retirement-modal").show();
+  }
+
+  $("#retirement-clicked").click(turnOnRetirement);
+
+  function turnOnSpecialNeeds() {
+    $("#overlay").fadeIn();
+    event.preventDefault();
+    $(".specialneeds-modal").show();
+  }
+
+  $("#specialneeds-clicked").click(turnOnSpecialNeeds);
+
+  function turnOnInsurance() {
+    $("#overlay").fadeIn();
+    event.preventDefault();
+    $(".insurance-modal").show();
+  }
+
+  $("#insurance-clicked").click(turnOnInsurance);
+
+  function turnOnAthlete() {
+    $("#overlay").fadeIn();
+    event.preventDefault();
+    $(".athlete-modal").show();
+  }
+
+  $("#athlete-clicked").click(turnOnAthlete);
+
+  function turnOnThirdParty() {
+    $("#overlay").fadeIn();
+    event.preventDefault();
+    $(".thirdparty-modal").show();
+  }
+
+  $("#thirdparty-clicked").click(turnOnThirdParty);
+
+  function turnOffModal() {
+    $("#overlay").fadeOut();
+    event.preventDefault();
+    $(".modals").hide();
+  }
+
+  $(".overlay").click(turnOffModal);
+
 });
